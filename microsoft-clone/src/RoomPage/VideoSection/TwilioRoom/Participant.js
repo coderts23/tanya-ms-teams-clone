@@ -7,14 +7,14 @@ class Participant extends Component {
     constructor(props){
         super(props);
 
-        const existingPublications =Array.from(this.props.participant.tracks.values());
+        const presentPublications =Array.from(this.props.participant.tracks.values());
 
-        const existingTracks = existingPublications.map((publication) => publication.track);
+        const presentTracks = presentPublications.map((publication) => publication.track);
         
-        const nonNullTracks = existingTracks.filter((track) => track!==null);
+        const notNullTracks = presentTracks.filter((track) => track!==null);
 
         this.state = {
-            tracks: nonNullTracks,
+            tracks: notNullTracks,
         };
     }
     componentDidMount() {

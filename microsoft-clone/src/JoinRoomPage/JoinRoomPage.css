@@ -40,13 +40,13 @@
     margin-top: 10px;
   }
   
-  .room_not_found_container {
+  .room_not_found_box {
     display: flex;
     height: 50px;
     margin-left: 35px;
   }
   
-  .room_not_found_paragraph {
+  .room_not_found_text {
     color: red;
   }
   

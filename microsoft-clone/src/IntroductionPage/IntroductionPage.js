@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import videoCall from '../resources/images/video-call.jpg';
-import ConnectingButtons from './ConnectingButtons';
+import ConnectButtons from './ConnectButtons';
 import { connect } from 'react-redux';
 import { setIsRoomHost} from '../store/actions';
 import Navbar from './Navbar';
@@ -26,7 +26,7 @@ const IntroductionPage = ({ setIsRoomHostAction }) => {
             Meet, chat, call, and collaborate in just one place.
             </div>
         <div className="introduction_page_buttons">
-        <ConnectingButtons/>
+        <ConnectButtons/>
         </div>
         </div>
         <div className="join_room_box col-7">

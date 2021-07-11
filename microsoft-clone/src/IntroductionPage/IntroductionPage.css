@@ -21,7 +21,7 @@
   .main_line {
     margin-top: 20%;
     margin-left: 2.5%;
-    font-size: 3.5em;
+    font-size: 3.5rem;
     font-weight: 700;
     font-family: Ubuntu, Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
@@ -104,4 +104,8 @@
     width: 90%;
     margin: auto;
     display: block;
+  }
+
+  .timeclock_text{
+    color: rgb(125, 128, 128);
   }

@@ -7,7 +7,7 @@ const SingleParticipant = ({ identity, lastItem}) => {
     }
     return (
         <>
-        <p className='participants_paragraph'>
+        <p className="participants_list">
             {getParticpantName(identity)}</p>
             {!lastItem && <span className="participants_separator_line"></span>}
         </>
@@ -16,7 +16,7 @@ const SingleParticipant = ({ identity, lastItem}) => {
 
 const Participants = ({participants}) => {
     return (
-        <div className="participants_container">
+        <div className="participants_box">
             {participants.map((participant, index) => {
                 return (
                     <SingleParticipant key={participant.identity}

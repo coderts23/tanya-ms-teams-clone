@@ -14,27 +14,28 @@ const Input = ({placeholder, value, changeHandler}) => {
 const JoinRoomInputs = (props) => {
     const { nameValue, setNameValue, roomIdValue, setRoomIdValue, isRoomHost } = props;
 
-    const handleRoomIdChange = (event) => {
+    const onRoomIdChange = (event) => {
         setRoomIdValue(event.target.value);
     };
 
-    const handleNameChange = (event) => {
+    const onNameChange = (event) => {
         setNameValue(event.target.value);
     };
 
+    // TO JOIN EXISTING MEETING
     return (
     <div className="inputs_container">
         {!isRoomHost && (
             <Input
             placeholder="Enter meeting ID"
             value={roomIdValue}
-            changeHandler={handleRoomIdChange}
+            changeHandler={onRoomIdChange}
             />
             )}
             <Input
             placeholder="Enter your Name"
             value={nameValue}
-            changeHandler={handleNameChange}
+            changeHandler={onNameChange}
             />
     </div>
     );

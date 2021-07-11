@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const LeaveRoomButton =({room}) => {
     const handleRoomDisconnection = () => {
         room.disconnect();
@@ -11,6 +12,7 @@ const LeaveRoomButton =({room}) => {
             <button className="video_button_end" onClick={handleRoomDisconnection}>
                 Leave Room
             </button>
+            
         </div>
     );
 };

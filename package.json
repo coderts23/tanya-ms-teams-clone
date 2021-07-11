@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^2.0.1",
+    "path": "^0.12.7",
+    "twilio": "^3.65.0",
+    "twilio-video": "^2.15.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.10"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "server": "node server.js",
+    "client": "npm start --prefix microsoft-clone",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+
+  },
+  "name": "api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
