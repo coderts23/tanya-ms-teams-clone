@@ -25,8 +25,6 @@ export const getTokenFromTwilio = async (setAccessToken, identity) => {
     console.log(identity);
 
     const response = await axios.get(`/api/token-service?identity=${randomId}${identity}`);
-    console.log(response.data)
-
     const data=response.data;
 
     if(data.accessToken) {
