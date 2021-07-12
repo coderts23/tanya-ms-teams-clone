@@ -318,11 +318,11 @@
     z-index: 4;
   }
   
-  .room_label_paragraph {
-    font-size: 17px;
+  .room_label_text {
+    font-size: 15px;
     color: white;
     margin-top: 0;
-    padding: 18px 38px;
+    padding: 15px 30px;
     background: linear-gradient(168.68deg, #0052c9 1.12%, #0a91db 100%);
     border-radius: 0px 0px 15px 15px;
   }
@@ -394,6 +394,14 @@
     left: 3%;
     font-size: large;
     font-weight: 700;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: cursive;
+  }
+
+  .participants_number{
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: auto;
+    font-family:cursive;
   }
   

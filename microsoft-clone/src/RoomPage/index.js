@@ -6,7 +6,7 @@ import ParticipantsSection from './ParticipantsSection';
 import VideoSection from './VideoSection';
 import ChatSection from './ChatSection';
 import { setTwilioAccessToken } from '../store/actions';
-import { getTokenFromTwilio } from '../utils/twilioUtils';
+import { getTokenFromTwilio } from '../utils';
 import Overlay from './Overlay';
 
 import './RoomPage.css';

@@ -19,6 +19,7 @@ const VideoTrack = ({track, participant}) => {
     const content =(
         <div className="video_track_box">
             <div ref={trackRef}></div>
+            {/* Displays Participant Name */}
             <div className="video_name">{participant.slice(36, participant.length)}</div>
         </div>
     );

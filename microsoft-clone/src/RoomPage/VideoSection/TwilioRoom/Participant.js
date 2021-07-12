@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { addMessageToMessenger } from '../../../utils/twilioUtils';
+import { addMessageToMessenger } from '../../../utils';
 import AudioTrack from './AudioTrack';
 import VideoTrack from './VideoTrack';
 

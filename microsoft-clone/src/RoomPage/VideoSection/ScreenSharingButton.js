@@ -27,7 +27,7 @@ const ScreenSharingButton = ({room}) => {
                     setIsScreenSharingActive(false);
                 };
             }).catch(e => {
-                console.error('Could not get an access to share screen', e);
+                console.error('Could not access share screen', e);
             });
         }else {
             screenShareTrack.stop();

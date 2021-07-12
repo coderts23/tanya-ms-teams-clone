@@ -17,6 +17,9 @@ const OneParticipant = ({ identity, lastItem}) => {
 const Participants = ({participants}) => {
     return (
         <div className="participants_box">
+            <div className="participants_number">
+            Total Participants : {(participants.length +1)}
+            </div>
             {participants.map((participant, index) => {
                 return (
                     <OneParticipant key={participant.identity}

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import sendMessageButton from '../../resources/images/sendMessageButton.svg'
-import { sendMessageUsingDataChannel } from '../../utils/twilioUtils';
+import { sendMessageUsingDataChannel } from '../../utils';
 
 const NewMessage = () => {
     const [message, setMessage] = useState("");

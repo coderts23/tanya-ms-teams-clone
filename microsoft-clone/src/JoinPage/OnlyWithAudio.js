@@ -5,14 +5,14 @@ import CheckImg from '../resources/images/check.png'
 const OnlyWithAudio = (props) => {
     const {connectOnlyWithAudio, setConnectOnlyWithAudio} = props;
 
-    const handleConnectionTypeChange = () => {
+    const handleConnectTypeChange = () => {
         setConnectOnlyWithAudio(!connectOnlyWithAudio);
     };
 
     return (
     <div className="checkbox_container">
         <div className="checkbox_connection" 
-        onClick={handleConnectionTypeChange}
+        onClick={handleConnectTypeChange}
         >
             {connectOnlyWithAudio && (
                 <img className="checkbox_image" src={CheckImg} alt="checkbox"></img>

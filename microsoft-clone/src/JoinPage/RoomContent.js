@@ -7,7 +7,7 @@ import RoomNotExistMessage from './RoomNotExistMessage';
 import JoinButtons from './JoinButtons';
 import { useHistory } from 'react-router';
 import { v4 as uuidv4 } from 'uuid';
-import {checkIfRoomExists} from '../utils/twilioUtils';
+import {checkIfRoomExists} from '../utils';
 
 const RoomContent = (props) => {
     const { isRoomHost,  setConnectOnlyWithAudioAction, connectOnlyWithAudio, setRoomIdAction, setIdentityAction, setShowLoadingOverlay} = props;
