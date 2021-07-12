@@ -1,6 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 
+
 const VideoTrack = ({track, participant}) => {
     const trackRef = useRef();
 
@@ -16,7 +17,7 @@ const VideoTrack = ({track, participant}) => {
     }, []);
 
     const content =(
-        <div className="video_track_container">
+        <div className="video_track_box">
             <div ref={trackRef}></div>
             <div className="video_name">{participant.slice(36, participant.length)}</div>
         </div>

@@ -3,12 +3,12 @@ import { LocalVideoTrack } from 'twilio-video';
 import SwitchImg from '../../resources/images/switchToScreenSharing.svg'
 import LocalScreenSharingPreview from './LocalScreenSharingPreview';
 
-const SwitchToScreenSharingButton = ({room}) => {
+const ScreenSharingButton = ({room}) => {
     const [isScreenSharingActive, setIsScreenSharingActive] = useState(false);
     const [screenShareTrack, setScreenShareTrack] = useState(null);
     const [screenShareStream, setScreenShareStream] = useState(null);
 
-    const handleScreenSharingEnabling = () => {
+    const handleScreenSharing = () => {
         if(!isScreenSharingActive) {
             navigator.mediaDevices.getDisplayMedia()
             .then(stream => {
@@ -40,7 +40,7 @@ const SwitchToScreenSharingButton = ({room}) => {
     return (
         <>
         <div className="video_button_container">
-            <img src={SwitchImg} onClick={handleScreenSharingEnabling}
+            <img src={SwitchImg} onClick={handleScreenSharing}
             className="video_button_image"
             alt="video button"/>
         </div>
@@ -51,4 +51,4 @@ const SwitchToScreenSharingButton = ({room}) => {
     );
 };
 
-export default SwitchToScreenSharingButton;
+export default ScreenSharingButton;

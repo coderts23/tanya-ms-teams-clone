@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.70d3ad85.chunk.css",
-    "main.js": "/static/js/main.6f248340.chunk.js",
-    "main.js.map": "/static/js/main.6f248340.chunk.js.map",
+    "main.css": "/static/css/main.42d23bbc.chunk.css",
+    "main.js": "/static/js/main.75a10060.chunk.js",
+    "main.js.map": "/static/js/main.75a10060.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3a090762.js",
     "runtime-main.js.map": "/static/js/runtime-main.3a090762.js.map",
     "static/js/2.edab4cbd.chunk.js": "/static/js/2.edab4cbd.chunk.js",
     "static/js/2.edab4cbd.chunk.js.map": "/static/js/2.edab4cbd.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.70d3ad85.chunk.css.map": "/static/css/main.70d3ad85.chunk.css.map",
+    "static/css/main.42d23bbc.chunk.css.map": "/static/css/main.42d23bbc.chunk.css.map",
     "static/js/2.edab4cbd.chunk.js.LICENSE.txt": "/static/js/2.edab4cbd.chunk.js.LICENSE.txt",
     "static/media/camera.b50348a3.svg": "/static/media/camera.b50348a3.svg",
     "static/media/cameraOff.a61d4a02.svg": "/static/media/cameraOff.a61d4a02.svg",
-    "static/media/JoinRoomPage.css": "/static/media/joining_page.c627a9e9.jpg",
+    "static/media/JoinPage.css": "/static/media/joining_page.c627a9e9.jpg",
     "static/media/mic.c9c9788e.svg": "/static/media/mic.c9c9788e.svg",
     "static/media/micOff.3a72f682.svg": "/static/media/micOff.3a72f682.svg",
     "static/media/sendMessageButton.9add4f6d.svg": "/static/media/sendMessageButton.9add4f6d.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.3a090762.js",
     "static/js/2.edab4cbd.chunk.js",
-    "static/css/main.70d3ad85.chunk.css",
-    "static/js/main.6f248340.chunk.js"
+    "static/css/main.42d23bbc.chunk.css",
+    "static/js/main.75a10060.chunk.js"
   ]
 }

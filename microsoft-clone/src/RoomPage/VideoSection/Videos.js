@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 import { connectToRoom } from '../../utils/twilioUtils';
 import RoomLabel from './Roomlabel';
-import TwilioRoom from './TwilioRoom/TwilioRoom';
+import TwilioRoom from './TwilioRoom';
 
 const Videos = ({room, setRoom, roomId, twilioAccessToken}) => {
 

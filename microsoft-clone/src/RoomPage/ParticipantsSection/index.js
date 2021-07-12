@@ -1,11 +1,11 @@
 import React from 'react';
 import Participants from './Participants';
-import ParticipantsLabel from'./ParticipantsLabel';
+import ParticipantsTitle from'./ParticipantsTitle';
 
 const ParticipantsSection =() => {
     return (
         <div className="participants_section_container">
-            <ParticipantsLabel />
+            <ParticipantsTitle />
             <Participants/>
         </div>
     );

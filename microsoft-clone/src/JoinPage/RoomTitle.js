@@ -1,6 +1,6 @@
 import React from 'react';
 
-const JoinRoomTitle =({isRoomHost}) => {
+const RoomTitle =({isRoomHost}) => {
 
     // TITLE TEXT
     const text =isRoomHost ? 'Host Meeting' : 'Join meeting';
@@ -10,4 +10,4 @@ const JoinRoomTitle =({isRoomHost}) => {
     );
 };
 
-export default JoinRoomTitle;
+export default RoomTitle;

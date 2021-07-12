@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
 import { connect } from 'react-redux';
-import JoinRoomInputs from './JoinRoomInputs';
+import JoinInputs from './JoinInputs';
 import OnlyWithAudio from './OnlyWithAudio';
 import { setConnectOnlyWithAudio, setIdentity, setRoomId } from '../store/actions';
-import RoomNotFoundMessage from './RoomNotFoundMessage';
-import JoinRoomButtons from './JoinRoomButtons';
+import RoomNotExistMessage from './RoomNotExistMessage';
+import JoinButtons from './JoinButtons';
 import { useHistory } from 'react-router';
 import { v4 as uuidv4 } from 'uuid';
 import {checkIfRoomExists} from '../utils/twilioUtils';
 
-const JoinRoomContent = (props) => {
+const RoomContent = (props) => {
     const { isRoomHost,  setConnectOnlyWithAudioAction, connectOnlyWithAudio, setRoomIdAction, setIdentityAction, setShowLoadingOverlay} = props;
 
     const [roomIdValue, setRoomIdValue] = useState("");
     const [nameValue, setNameValue] =useState("");
-    const [showRoomNotFoundMessage, setShowRoomNotFoundMessage] = useState(false);
+    const [showRoomNotExistMessage, setShowRoomNotExistMessage] = useState(false);
 
     const history = useHistory();
 
@@ -28,7 +28,7 @@ const JoinRoomContent = (props) => {
                 setRoomIdAction(roomIdValue);
                 history.push('/room');
             }else {
-                setShowRoomNotFoundMessage(true);
+                setShowRoomNotExistMessage(true);
             }
         }else{
             setRoomIdAction(uuidv4());
@@ -38,7 +38,7 @@ const JoinRoomContent = (props) => {
 
     return (
         <>
-        <JoinRoomInputs
+        <JoinInputs
         roomIdValue={roomIdValue}
         setRoomIdValue={setRoomIdValue}
         nameValue={nameValue}
@@ -49,8 +49,8 @@ const JoinRoomContent = (props) => {
         setConnectOnlyWithAudio = {setConnectOnlyWithAudioAction}
         connectOnlyWithAudio = {connectOnlyWithAudio}
         />
-        <RoomNotFoundMessage showRoomNotFoundMessage={showRoomNotFoundMessage}/>
-        <JoinRoomButtons isRoomHost={isRoomHost} handleJoinToRoom={handleJoinToRoom}/>
+        <RoomNotExistMessage showRoomNotExistMessage={showRoomNotExistMessage}/>
+        <JoinButtons isRoomHost={isRoomHost} handleJoinToRoom={handleJoinToRoom}/>
         </>
     );
 };
@@ -70,4 +70,4 @@ const mapStoreStateToProps =(state) => {
 };
 
 
-export default connect(mapStoreStateToProps, mapDispatchToProps)(JoinRoomContent);
+export default connect(mapStoreStateToProps, mapDispatchToProps)(RoomContent);

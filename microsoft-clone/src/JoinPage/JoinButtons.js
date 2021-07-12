@@ -11,7 +11,7 @@ const Button  =({ buttonText, cancelButton, onClickHandler }) => {
     );
 };
 
-const JoinRoomButtons = ({handleJoinToRoom, isRoomHost}) => {
+const JoinButtons = ({handleJoinToRoom, isRoomHost}) => {
     const isHostText = isRoomHost ? 'Host' : 'Join';
     const history = useHistory();
 
@@ -35,4 +35,4 @@ const JoinRoomButtons = ({handleJoinToRoom, isRoomHost}) => {
     );
 };
 
-export default JoinRoomButtons;
+export default JoinButtons;

@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
 import {useHistory} from 'react-router-dom';
-import './RoomPage.css';
-
-import ParticipantsSection from './ParticipantsSection/ParticipantsSection';
-import VideoSection from './VideoSection/VideoSection';
-import ChatSection from './ChatSection/ChatSection';
 import {connect} from 'react-redux';
+
+import ParticipantsSection from './ParticipantsSection';
+import VideoSection from './VideoSection';
+import ChatSection from './ChatSection';
 import { setTwilioAccessToken } from '../store/actions';
 import { getTokenFromTwilio } from '../utils/twilioUtils';
 import Overlay from './Overlay';
+
+import './RoomPage.css';
 
 const RoomPage = (props) => {
     const { identity, roomId, setTwilioAccessTokenAction, showOverlay} = props;

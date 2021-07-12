@@ -4,11 +4,11 @@ import ConnectButtons from './ConnectButtons';
 import { connect } from 'react-redux';
 import { setIsRoomHost} from '../store/actions';
 import Navbar from './Navbar';
-import './IntroductionPage.css';
+import './IntroPage.css';
 import DateTime from './DateTime';
 
 
-const IntroductionPage = ({ setIsRoomHostAction }) => {
+const IntroPage = ({ setIsRoomHostAction }) => {
     useEffect(() => {
         setIsRoomHostAction(false);
     }, []);
@@ -47,4 +47,4 @@ const mapDispatchToProps = (dispatch) => {
     };
 };
 
-export default connect(null, mapDispatchToProps)(IntroductionPage);
+export default connect(null, mapDispatchToProps)(IntroPage);

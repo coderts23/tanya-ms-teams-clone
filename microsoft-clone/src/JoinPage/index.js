@@ -2,13 +2,13 @@ import React, {useEffect, useState} from 'react';
 import {connect} from 'react-redux';
 import { setIsRoomHost } from '../store/actions';
 import { useLocation } from 'react-router-dom';
-import JoinRoomTitle from './JoinRoomTitle';
-import JoinRoomContent from './JoinRoomContent';
+import RoomTitle from './RoomTitle';
+import RoomContent from './RoomContent';
 import LoadingOverlay from './LoadingOverlay';
 
-import './JoinRoomPage.css';
+import './JoinPage.css';
 
-const JoinRoomPage = (props) => {
+const JoinPage = (props) => {
     const {setIsRoomHostAction, isRoomHost} = props; 
 
     const search = useLocation().search;
@@ -26,12 +26,12 @@ const JoinRoomPage = (props) => {
     return (
         <div className="join_room_container">
             <div className="join_room_panel">
-                <JoinRoomTitle isRoomHost={isRoomHost}/>
-                <JoinRoomContent 
+                <RoomTitle isRoomHost={isRoomHost}/>
+                <RoomContent 
                     setShowLoadingOverlay={setShowLoadingOverlay}
                 />
-                {showLoadingOverlay && <LoadingOverlay />}
             </div>
+            {showLoadingOverlay && <LoadingOverlay />}
         </div>
     );
 
@@ -49,4 +49,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStoreStateToProps, mapDispatchToProps)(JoinRoomPage);
+export default connect(mapStoreStateToProps, mapDispatchToProps)(JoinPage);

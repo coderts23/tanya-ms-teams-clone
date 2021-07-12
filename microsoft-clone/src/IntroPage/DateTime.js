@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './IntroductionPage.css';
+import './IntroPage.css';
 class DateTime extends Component {
   constructor() {
     super()

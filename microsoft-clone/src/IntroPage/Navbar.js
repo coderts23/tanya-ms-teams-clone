@@ -1,7 +1,7 @@
 import React from 'react';
 import microsoftLogo from '../resources/images/microsoft.png';
 
-import './IntroductionPage.css';
+import './IntroPage.css';
 const Navbar = () => {
     return(
         <div className="navbar">

@@ -4,7 +4,8 @@ import {connect} from 'react-redux';
 import MicButton from './MicButton';
 import LeaveRoomButton from './LeaveRoomButton';
 import CameraButton from './CameraButton';
-import SwitchToScreenSharingButton from './SwitchToScreenSharingButton';
+import ScreenSharingButton from './ScreenSharingButton';
+
 
 const VideoButtons = (props) => {
     const {room, connectOnlyWithAudio} = props;
@@ -14,7 +15,7 @@ const VideoButtons = (props) => {
             <MicButton room={room}/>
             {!connectOnlyWithAudio && <CameraButton room ={room}/>}
             <LeaveRoomButton room={room} />
-            <SwitchToScreenSharingButton room={room} />
+            <ScreenSharingButton room={room} />
         </div>
     )
 };

@@ -11,7 +11,7 @@ const Input = ({placeholder, value, changeHandler}) => {
     );
 };
 
-const JoinRoomInputs = (props) => {
+const JoinInputs = (props) => {
     const { nameValue, setNameValue, roomIdValue, setRoomIdValue, isRoomHost } = props;
 
     const onRoomIdChange = (event) => {
@@ -41,4 +41,4 @@ const JoinRoomInputs = (props) => {
     );
 };
 
-export default JoinRoomInputs;
+export default JoinInputs;

@@ -90,12 +90,12 @@ export const sendMessageUsingDataChannel = (
 
     addMessageToMessenger(ownMessage);
 
-    const messageToSent = {
+    const messageToSend = {
         identity,
         content
     }
 
-    const stringifiedMessage = JSON.stringify(messageToSent);
+    const stringifiedMessage = JSON.stringify(messageToSend);
     dataChannel.send(stringifiedMessage);
 };
 

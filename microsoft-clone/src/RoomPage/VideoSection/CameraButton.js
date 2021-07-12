@@ -8,7 +8,7 @@ const CameraButton =({room}) => {
     const handleCameraButtonPressed = () => {
         isLocalVideotrackDisabled ? startVideo() : stopVideo();
 
-        setIsLocalVideoTrackDisabled(!isLocalVideotrackDisabled)
+        setIsLocalVideoTrackDisabled(!isLocalVideotrackDisabled);
     }   
 
     // To Turn Video ON

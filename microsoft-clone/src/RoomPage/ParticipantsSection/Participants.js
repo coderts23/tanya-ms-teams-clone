@@ -1,15 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const SingleParticipant = ({ identity, lastItem}) => {
-    const getParticpantName = (identity) => {
+const OneParticipant = ({ identity, lastItem}) => {
+    const particpantName = (identity) => {
         return identity.slice(36, identity.length);
     }
     return (
         <>
         <p className="participants_list">
-            {getParticpantName(identity)}</p>
-            {!lastItem && <span className="participants_separator_line"></span>}
+            {particpantName(identity)}</p>
+            {!lastItem && <span className="participants_separator"></span>}
         </>
     );
 };
@@ -19,7 +19,7 @@ const Participants = ({participants}) => {
         <div className="participants_box">
             {participants.map((participant, index) => {
                 return (
-                    <SingleParticipant key={participant.identity}
+                    <OneParticipant key={participant.identity}
                     identity={participant.identity}
                     lastItem={participants.length === index + 1}/>
                 );

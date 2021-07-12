@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import JoinRoomPage from './JoinRoomPage/JoinRoomPage';
-import RoomPage from './RoomPage/RoomPage';
-import IntroductionPage from './IntroductionPage/IntroductionPage';
+import JoinRoomPage from './JoinPage';
+import RoomPage from './RoomPage';
+import IntroPage from './IntroPage';
 
 import './App.css';
 
@@ -18,7 +18,7 @@ function App() {
           <RoomPage />
           </Route>
           <Route path="/">
-            <IntroductionPage />
+            <IntroPage />
           </Route>
       </Switch>
     </Router>
